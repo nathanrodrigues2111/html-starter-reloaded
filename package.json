@@ -1,7 +1,7 @@
 {
   "name": "gulp-default-starter",
   "version": "1.0.0",
-  "author": "Bartek Cis",
+  "author": "Nathan Rodrigues",
   "description": "Simple configuration for your Gulp project",
   "main": "gulpfile.js",
   "scripts": {
