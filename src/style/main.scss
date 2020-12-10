@@ -1,0 +1,20 @@
+@import "fonts";
+@import "aos";
+@import "grid";
+@import "./components/all";
+
+
+h1 {
+    color: red;
+    padding: 2rem 0;
+    font-family: quicksandregular;
+    text-align: center;
+    width: 100%;
+}
+
+p {
+    color: turquoise;
+    font-family: quicksandregular;
+    text-align: center;
+    width: 100%;
+}
