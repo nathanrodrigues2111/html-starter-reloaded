@@ -9,13 +9,13 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/bartcis/gulp-4.git"
+    "url": "git+https://github.com/nathanrodrigues2111/html-starter-reloaded.git"
   },
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/bartcis/gulp-4/issues"
   },
-  "homepage": "https://github.com/bartcis/gulp-4#readme",
+  "homepage": "https://github.com/nathanrodrigues2111/html-starter-reloaded.git#readme",
   "devDependencies": {
     "@babel/core": "^7.4.5",
     "@babel/preset-env": "^7.4.5",
