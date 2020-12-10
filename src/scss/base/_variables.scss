@@ -1,0 +1,40 @@
+
+/* ==========================================================================
+  COMMON VARIABLES
+  ========================================================================== */
+
+
+// Color variable map
+$colors: (
+  // non-nested values
+  background: #F9F9F9,
+  border: #F0F0F0,
+  failure: #ff353b,
+  success: #3DF030,
+  white: #fff,
+  black: #000,
+  text: #061D48,
+  primary: (
+    base: #061D48,
+    light: #DBE9F7,
+    light1: #5C84B5, 
+    lighter: #96B5DB,
+    trans: transparentize(#061D48, 0.7),
+    transparent: transparentize(#061D48, 0.5),
+    alt: #A7C6EC,
+    alt-text: #6B84A2, 
+  ),
+);
+
+// ==========================================================================
+//  COMPONENT SPECIFIC VARIABLES
+//  ==========================================================================
+
+// TYPOGRAPHY
+//   ==========================================================================
+$htmlFontSize: 16px;
+$baseFontSize: 16px;
+$baseFontFamily: "aktiv-grotesk",sans-serif;
+$font-awesome: 'FontAwesome';
+$baseLineHeight: 1.5;
+$baseTextColor: color(text);

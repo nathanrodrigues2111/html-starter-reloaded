@@ -15,7 +15,7 @@ const config = {
         js: [
             './src/scripts/**/*.js',
         ],
-        scss: './src/style/**/*.scss',
+        scss: './src/scss/**/*.scss',
         fonts: './src/fonts/*',
         images: './src/images/*.*',
         html: './src/*.html'
