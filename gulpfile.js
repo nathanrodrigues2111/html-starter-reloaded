@@ -9,6 +9,7 @@ const postcss = require('gulp-postcss');
 const sass = require('gulp-sass');
 const autoprefixer = require('autoprefixer');
 const cssnano = require('cssnano');
+const fileinclude = require('gulp-file-include');
 
 const config = {
     app: {
@@ -18,6 +19,7 @@ const config = {
         scss: './src/scss/**/*.scss',
         fonts: './src/fonts/*',
         images: './src/images/*.*',
+        components: './src/**/*.html',
         html: './src/*.html'
     },
     dist: {
@@ -26,6 +28,8 @@ const config = {
         images: './dist/images'
     }
 }
+
+
 
 function jsTask(done) {
     src(config.app.js)
@@ -37,6 +41,7 @@ function jsTask(done) {
         .pipe(dest(config.dist.base))
     done();
 }
+
 
 function cssTask(done) {
     src(config.app.scss)
@@ -61,6 +66,10 @@ function imagesTask(done) {
 
 function templateTask(done) {
     src(config.app.html)
+        .pipe(fileinclude({ 
+            prefix: '@@',
+            basepath: '@file'
+        }))
         .pipe(dest(config.dist.base))
     done();
 }
@@ -70,7 +79,7 @@ function watchFiles() {
     watch(config.app.scss, series(cssTask, reload));
     watch(config.app.fonts, series(fontTask, reload));
     watch(config.app.images, series(imagesTask, reload));
-    watch(config.app.html, series(templateTask, reload));
+    watch(config.app.components, series(templateTask, reload));
 }
 
 function liveReload(done) {

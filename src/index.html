@@ -1,23 +1,13 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Webpack Project</title>
-    <link rel="stylesheet" href="main.bundle.css">
-</head>
 
-<body>
-    <div class="bootstrap-wrapper">
-        <div class="container">
-            <h1>This is via bootstrap</h1>
-        </div>
+@@include('./components/header.html')   
+
+<div class="bootstrap-wrapper">
+    <div class="container">
+        <h1>This is via bootstrap</h1>
     </div>
+</div>
 
-    <h1>Hello World!!! sdasd 1111</h1>
-    <p>How are you?</p>
-    <script src="main.bundle.js"></script>
-</body>
-
-</html>
+<h1>Hello World!!! sdasd 1111</h1>
+<p>How are you?</p>
+ 
+@@include('./components/footer.html')   
